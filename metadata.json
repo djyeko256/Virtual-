@@ -1,0 +1,6 @@
+{
+  "name": "Virtual DJ Studio",
+  "description": "Professional dark-mode virtual DJ mixer supporting 2-to-4 deck audio and video live mixing, vinyl platters, beatgrid sync, real-time FX, MIDI mapping, and cloud library sync.",
+  "requestFramePermissions": ["microphone"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

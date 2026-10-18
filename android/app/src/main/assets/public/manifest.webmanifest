@@ -1,0 +1,21 @@
+{
+  "id": "/",
+  "name": "Virtual DJ Studio",
+  "short_name": "VirtualDJ",
+  "description": "Professional virtual DJ mixer supporting multi-deck audio/video mixing, vinyl platters, beatgrid sync, and real-time FX.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#09090b",
+  "theme_color": "#09090b",
+  "categories": ["music", "entertainment", "audio"],
+  "icons": [
+    {
+      "src": "/icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    }
+  ]
+}

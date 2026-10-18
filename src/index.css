@@ -1,0 +1,145 @@
+@import "tailwindcss";
+
+@layer base {
+  * {
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+    background-color: #0A0A0A;
+    color: #D1D5DB;
+    user-select: none;
+    -webkit-user-select: none;
+    overflow-x: hidden;
+  }
+  
+  /* Monospace & Digital Displays */
+  .font-mono-num {
+    font-family: 'JetBrains Mono', monospace;
+    font-feature-settings: 'tnum' 1;
+  }
+
+  .font-display {
+    font-family: 'Chakra Petch', sans-serif;
+  }
+}
+
+/* Elegant Dark Vinyl Turntable Platter */
+.vinyl-platter-elegant {
+  background: radial-gradient(
+    circle,
+    #111111 0%,
+    #080808 28%,
+    #181818 30%,
+    #050505 32%,
+    #161616 48%,
+    #070707 52%,
+    #1a1a1a 68%,
+    #050505 72%,
+    #141414 85%,
+    #020202 100%
+  );
+  box-shadow: 
+    0 0 0 1px rgba(255, 255, 255, 0.05),
+    0 15px 40px rgba(0, 0, 0, 0.95),
+    inset 0 0 25px rgba(0, 0, 0, 0.95);
+}
+
+.vinyl-sheen-elegant {
+  background: conic-gradient(
+    from 45deg at 50% 50%,
+    rgba(255, 255, 255, 0.06) 0deg,
+    transparent 60deg,
+    rgba(255, 255, 255, 0.04) 120deg,
+    transparent 180deg,
+    rgba(255, 255, 255, 0.06) 240deg,
+    transparent 300deg,
+    rgba(255, 255, 255, 0.04) 360deg
+  );
+}
+
+/* Elegant Dark Pitch Fader */
+input[type="range"].dj-slider-vertical {
+  -webkit-appearance: none;
+  appearance: none;
+  background: transparent;
+  cursor: pointer;
+  writing-mode: vertical-lr;
+  direction: rtl;
+}
+
+input[type="range"].dj-slider-vertical::-webkit-slider-runnable-track {
+  width: 4px;
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 9999px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+input[type="range"].dj-slider-vertical::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  height: 32px;
+  width: 18px;
+  background: #2563eb;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  border-radius: 4px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.7), inset 0 1px 0 rgba(255, 255, 255, 0.4);
+  margin-left: -7px;
+  cursor: ns-resize;
+  position: relative;
+}
+
+input[type="range"].dj-slider-vertical.slider-orange::-webkit-slider-thumb {
+  background: #f97316;
+}
+
+input[type="range"].dj-slider-vertical.slider-purple::-webkit-slider-thumb {
+  background: #a855f7;
+}
+
+input[type="range"].dj-slider-vertical.slider-emerald::-webkit-slider-thumb {
+  background: #10b981;
+}
+
+/* Elegant Dark Horizontal Crossfader */
+input[type="range"].dj-crossfader {
+  -webkit-appearance: none;
+  appearance: none;
+  background: transparent;
+  cursor: pointer;
+  width: 100%;
+}
+
+input[type="range"].dj-crossfader::-webkit-slider-runnable-track {
+  height: 4px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 9999px;
+}
+
+input[type="range"].dj-crossfader::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  height: 24px;
+  width: 36px;
+  background: #F3F4F6;
+  border: 1px solid #111111;
+  border-radius: 4px;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.8), inset 0 1px 0 rgba(255, 255, 255, 0.8);
+  margin-top: -10px;
+  cursor: ew-resize;
+}
+
+/* Elegant Dark Scrollbars */
+::-webkit-scrollbar {
+  width: 5px;
+  height: 5px;
+}
+::-webkit-scrollbar-track {
+  background: #0A0A0A;
+}
+::-webkit-scrollbar-thumb {
+  background: #1F1F1F;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #333333;
+}
